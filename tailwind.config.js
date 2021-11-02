@@ -8,5 +8,16 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      "halloween", // first one will be the default theme
+      "light",
+      "luxury",
+      "corporate",
+      "forest",
+    ],
+    styled: true,
+    rtl: false,
+  },
 };
