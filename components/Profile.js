@@ -21,8 +21,8 @@ const Profile = () => {
       leaveTo="opacity-0 scale-95"
     >
       <div
-        className="md:mt-36 px-2 lg:px-8 flex xl:flex-row flex-col justify-between mx-auto md:space-x-4 space-x-0 md:pb-0 pb-8"
-        style={{ maxWidth: "1600px", minHeight: "100vh", maxHeight: "100vh" }}
+        className=" mt-11 pt-20 px-2 lg:px-8 flex xl:flex-row flex-col justify-between mx-auto md:space-x-2 space-x-0 md:pb-0 pb-8 text-base-content font-medium text-xl bg-base-100 transition duration-100 ease-linear md:min-h-screen"
+        style={{ maxWidth: "1600px", fontFamily: "poppins" }}
         id="profile"
       >
         <div className="flex flex-col max-w-4xl">
@@ -30,15 +30,9 @@ const Profile = () => {
           <div className="text-primary flex flex-col xl:flex-row text-justify">
             <h1
               className="mb-5 text-7xl font-extrabold  "
-              style={{ fontFamily: "Ubuntu Mono" }}
+              style={{ fontFamily: "IBM Plex Mono,monospace" }}
             >
-              HY,&nbsp;I am Ahmed Hassan{" "}
-            </h1>
-            <h1
-              className="mb-5 text-7xl font-extrabold "
-              style={{ fontFamily: "Ubuntu Mono" }}
-            >
-              {" "}
+              HI,&nbsp;I am Ahmed Hassan{" "}
             </h1>
           </div>
           {/* Body */}
@@ -46,28 +40,41 @@ const Profile = () => {
             <p className="pb-3">//ABOUT</p>
           </div>
           <div>
-            <p
-              className="mb-5 text-base-content font-bold text-justify leading-8"
-              style={{ fontFamily: "poppins" }}
-            >
+            <p className="mb-5 text-base-content font-bold text-justify leading-8">
               I am a MERN stack developer with a proven track record of
               designing and implementing innovative user-centric websites. I
               have been working in the field for the past four years developing
               complex applications in Web Development.
             </p>
           </div>
+          <div style={{ fontFamily: "IBM Plex Mono,monospace" }}>
+            <button
+              className="hover:bg-primary hover:text-primary-content rounded-box mb-4"
+              style={{
+                boxShadow: "-3px 5px #33332d",
+                padding: "0.6rem 1rem",
+                border: "3px solid",
+                fontWeight: "600",
+              }}
+            >
+              <a href="./Resume.pdf" download>
+                Download Resume
+              </a>
+            </button>
+          </div>
+
           {/* Contact */}
         </div>
 
-        <div className="bg-primary text-primary-content font-extrabold rounded-box max-w-md max-h-80">
+        <div className="bg-primary text-primary-content font-extrabold rounded-box max-w-md max-h-80 overflow-x-hidden">
           <div className="card-body flex flex-col ">
             <h2
               className="text-3xl font-extrabold pb-4"
-              style={{ fontFamily: "Ubuntu Mono" }}
+              style={{ fontFamily: "IBM Plex Mono,monospace" }}
             >
               Contact me:
             </h2>
-            <div className="flex flex-col justify-start space-y-2 text-xl">
+            <div className="flex flex-col justify-start space-y-2 sm:text-xl text-base">
               {/* <FacebookIcon fontSize="large" /> */}
               <div className="flex flex-row justify-start text-center items-center space-x-2">
                 <LinkedInIcon fontSize="large" />
