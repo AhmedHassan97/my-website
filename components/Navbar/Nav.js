@@ -42,14 +42,18 @@ const Navbar = (props) => {
             >
               <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:bg-base-300">
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
+                {router.pathname === "/" ? (
+                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:bg-base-300">
+                    <span className="sr-only">Open main menu</span>
+                    {open ? (
+                      <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    ) : (
+                      <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    )}
+                  </Disclosure.Button>
+                ) : (
+                  <div></div>
+                )}
               </div>
               <div className="flex-1 flex items-center justify-center lg:items-stretch lg:justify-start">
                 {router.pathname === "/" ? (

@@ -21,13 +21,13 @@ const Profile = () => {
       leaveTo="opacity-0 scale-95"
     >
       <div
-        className=" mt-11 pt-20 px-2 lg:px-8 flex xl:flex-row flex-col justify-between mx-auto md:space-x-2 space-x-0 md:pb-0 pb-8 text-base-content font-medium text-xl bg-base-100 transition duration-100 ease-linear md:min-h-screen"
+        className="xl:min-h-screen mt-11 pt-20 px-2 lg:px-8 flex xl:flex-row flex-col justify-between mx-auto md:space-x-2 space-x-0 md:pb-0 pb-8 text-base-content font-medium text-xl bg-base-100 transition duration-100 ease-linear "
         style={{ maxWidth: "1600px", fontFamily: "poppins" }}
         id="profile"
       >
         <div className="flex flex-col max-w-4xl">
           {/* Tittle */}
-          <div className="text-primary flex flex-col xl:flex-row text-justify">
+          <div className="text-primary flex flex-col xl:flex-row">
             <h1
               className="mb-5 text-7xl font-extrabold  "
               style={{ fontFamily: "IBM Plex Mono,monospace" }}
@@ -66,7 +66,7 @@ const Profile = () => {
           {/* Contact */}
         </div>
 
-        <div className="bg-primary text-primary-content font-extrabold rounded-box max-w-md max-h-80 overflow-x-hidden">
+        <div className="bg-primary text-primary-content font-extrabold rounded-box max-w-md max-h-80 ">
           <div className="card-body flex flex-col ">
             <h2
               className="text-3xl font-extrabold pb-4"

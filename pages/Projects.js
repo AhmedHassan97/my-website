@@ -15,20 +15,20 @@ const ProjectsPage = () => {
         <div className="text-center hero-content text-neutral-content">
           <div className="max-w-md">
             <h1
-              className="mb-5 text-8xl font-bold"
+              className="mb-5 xl:text-8xl text-6xl font-bold"
               style={{ fontFamily: "IBM Plex Mono,monospace" }}
             >
               Projects
             </h1>
 
-            <p className="mb-5 text-xl text-primary font-extrabold w-full">
+            <p className="mb-5 text-xl font-extrabold w-full">
               Every project is an opportunity to learn, to figure out problems
               and challenges, to invent and reinvent.
             </p>
           </div>
         </div>
       </div>
-      <div className="my-20">
+      <div className="my-20 mx-4">
         <ProjectItems start={0} end={-1} />
       </div>
     </div>

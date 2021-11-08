@@ -66,7 +66,7 @@ const ProjectItems = (props) => {
             key={feature.name}
             className="space-y-4 w-full border-r-2 border-l-8 border-b-8 border-t-2 border-base-content p-8 rounded-box"
           >
-            <dt className="flex-row flex">
+            <div className="sm:flex-row flex-col flex">
               <div className="h-12 w-12 rounded-md">
                 <feature.icon />
               </div>
@@ -79,18 +79,18 @@ const ProjectItems = (props) => {
                 </p>
                 <p className="ml-2 text-primary font-bold">{feature.stack}</p>
               </div>
-            </dt>
+            </div>
 
-            <dd className="mt-2 ml-16 space-x-2">
+            <div className="mt-2 md:ml-16 ml-2  space-x-2">
               <p className="font-bold">{feature.description}</p>
-            </dd>
+            </div>
 
             <div
-              className="flex flex-row space-x-2 pt-4 ml-16"
+              className="flex flex-row space-x-2 pt-4 md:ml-16"
               style={{ fontFamily: "IBM Plex Mono,monospace" }}
             >
               <button
-                className=" font-extrabold text-xl hover:bg-primary hover:text-primary-content rounded-box"
+                className=" font-extrabold text-xl hover:bg-primary hover:text-primary-content rounded-box "
                 style={{
                   boxShadow: "-3px 5px #33332d",
                   padding: "0.6rem 1rem",

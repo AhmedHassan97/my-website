@@ -149,7 +149,7 @@ const SkillsComponent = (props) => {
           <dl className="space-y-10 md:space-y-0 lg:grid lg:grid-cols-2 md:gap-x-8 md:gap-y-10 xl:ml-20">
             {features.map((feature) => (
               <div key={feature.name} className="space-y-4 w-full">
-                <dt className="flex-row flex">
+                <dt className="md:flex-row flex flex-col">
                   <div className="h-12 w-12 rounded-md">
                     <feature.icon />
                   </div>
@@ -160,7 +160,7 @@ const SkillsComponent = (props) => {
                     {feature.name}
                   </p>
                 </dt>
-                <dd className="mt-2 ml-16 space-x-2">
+                <dd className="mt-2 md:ml-16 ml-2 space-x-2">
                   <div className="grid sm:grid-cols-3 grid-cols-2 gap-4">
                     {feature.items.map((item) => {
                       return (

@@ -120,7 +120,7 @@ const Experiences = () => {
 
                 <div className="flex flex-col md:w-3/4">
                   <h2
-                    className="text-3xl font-extrabold pb-2 underline"
+                    className="md:text-3xl font-extrabold pb-2 underline"
                     style={{ fontFamily: "IBM Plex Mono,monospace" }}
                   >
                     {item.role}
@@ -177,7 +177,7 @@ const Experiences = () => {
 
                 <div className="flex flex-col md:w-3/4">
                   <h2
-                    className="text-3xl font-extrabold pb-2 underline"
+                    className="md:text-3xl font-extrabold pb-2 underline"
                     style={{ fontFamily: "IBM Plex Mono,monospace" }}
                   >
                     {item.major}
