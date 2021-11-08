@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider defaultTheme="luxury" attribute="data-theme">
       <Head>
-        <title>Hassan's Website</title>
+        <title>Ahmed Hassan's Website</title>
         <meta
           name="description"
           content="Hi, my name is Ahmed Hassan. I am a MERN stack developer with a proven track record of
@@ -25,10 +25,6 @@ function MyApp({ Component, pageProps }) {
           designing and implementing innovative user-centric websites."
         ></meta>
         <meta property="og:site_name" content="Ahmed Hassan's Website"></meta>
-        <meta
-          property="og:url"
-          content="https://hassan-website-89n44pgb0-ahmedhassan202025.vercel.app/"
-        ></meta>
         <meta property="og:image" content="/site.PNG"></meta>
       </Head>
       <Component {...pageProps} />

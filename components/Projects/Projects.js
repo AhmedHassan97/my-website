@@ -39,8 +39,8 @@ const Projects = (props) => {
                 fontWeight: "600",
               }}
             >
-              <Link href="/Projects">
-                <a>
+              <Link href="/Projects" aria-label="Projects Page">
+                <a aria-label="Projects Page">
                   See More <ArrowForwardIcon />
                 </a>
               </Link>

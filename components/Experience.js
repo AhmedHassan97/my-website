@@ -107,8 +107,9 @@ const Experiences = () => {
                   <h1 className="text-3xl text-primary font-extrabold">
                     <a
                       href={item.link}
-                      className="link no-underline hover:underline"
+                      className="hover:underline"
                       style={{ fontFamily: "IBM Plex Mono,monospace" }}
+                      rel="noopener"
                     >
                       {item.company}
                     </a>
@@ -125,17 +126,15 @@ const Experiences = () => {
                   >
                     {item.role}
                   </h2>
-                  <div>
-                    <ul>
-                      {item.whatIDid.map((task) => (
-                        <li
-                          className="font-semibold text-primary"
-                          key={task.length}
-                        >
-                          -{task}
-                        </li>
-                      ))}
-                    </ul>
+                  <div className="flex flex-col">
+                    {item.whatIDid.map((task) => (
+                      <div
+                        className="font-semibold text-primary"
+                        key={task.length}
+                      >
+                        -{task}
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -159,8 +158,9 @@ const Experiences = () => {
                   <h1 className="text-3xl text-primary font-extrabold">
                     <Link href={item.link}>
                       <a
-                        className="link no-underline hover:underline"
+                        className="hover:underline"
                         style={{ fontFamily: "IBM Plex Mono,monospace" }}
+                        rel="noopener"
                       >
                         {item.schoolName}
                       </a>

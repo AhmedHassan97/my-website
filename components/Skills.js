@@ -84,7 +84,7 @@ const features = [
       },
       {
         name: "Prisma",
-        icon: "./Prisma-logo.png",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-plain.svg",
       },
       {
         name: "mongo",
@@ -146,7 +146,7 @@ const SkillsComponent = (props) => {
         <div className="divider w-1/2 lg:mx-auto mr-auto"></div>
 
         <div className="mt-10">
-          <dl className="space-y-10 md:space-y-0 lg:grid lg:grid-cols-2 md:gap-x-8 md:gap-y-10 xl:ml-20">
+          <div className="space-y-10 md:space-y-0 lg:grid lg:grid-cols-2 md:gap-x-8 md:gap-y-10 xl:ml-20">
             {features.map((feature) => (
               <div key={feature.name} className="space-y-4 w-full">
                 <dt className="md:flex-row flex flex-col">
@@ -160,7 +160,7 @@ const SkillsComponent = (props) => {
                     {feature.name}
                   </p>
                 </dt>
-                <dd className="mt-2 md:ml-16 ml-2 space-x-2">
+                <div className="mt-2 md:ml-16 ml-2 space-x-2">
                   <div className="grid sm:grid-cols-3 grid-cols-2 gap-4">
                     {feature.items.map((item) => {
                       return (
@@ -170,6 +170,7 @@ const SkillsComponent = (props) => {
                         "
                         >
                           <img
+                            alt={item.name}
                             src={item.icon}
                             width="25"
                             height="25"
@@ -186,10 +187,10 @@ const SkillsComponent = (props) => {
                       );
                     })}
                   </div>
-                </dd>
+                </div>
               </div>
             ))}
-          </dl>
+          </div>
         </div>
       </div>
     </div>

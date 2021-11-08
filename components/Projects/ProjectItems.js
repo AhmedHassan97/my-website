@@ -99,7 +99,10 @@ const ProjectItems = (props) => {
                 }}
               >
                 <Link href={feature.github}>
-                  <a target="_blank"> GitHub repo</a>
+                  <a target="_blank" rel="noopener">
+                    {" "}
+                    GitHub repo
+                  </a>
                 </Link>{" "}
               </button>
 
