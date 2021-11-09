@@ -1,17 +1,13 @@
 import { Fragment, useEffect, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon, BackspaceIcon } from "@heroicons/react/outline";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import Scrollspy from "react-scrollspy";
 import { useRouter } from "next/router";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 const themes = ["halloween", "light", "luxury", "corporate", "forest"];
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
-const Navbar = (props) => {
+const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const router = useRouter();
 
@@ -108,6 +104,7 @@ const Navbar = (props) => {
                 <Menu as="div" className="ml-3">
                   <div>
                     <Menu.Button
+                      aria-label="change-theme"
                       className="flex text-sm rounded-full hover:bg-primary hover:text-primary-content p-2 "
                       style={{
                         boxShadow: "-3px 5px #33332d",
@@ -161,7 +158,10 @@ const Navbar = (props) => {
                               }
                               onClick={() => setTheme(themeName)}
                             >
-                              {themeName}
+                              {themeName === "luxury"
+                                ? "Dark"
+                                : themeName[0].toUpperCase() +
+                                  themeName.substring(1)}
                             </button>
                           )}
                         </Menu.Item>

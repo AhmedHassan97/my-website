@@ -48,10 +48,10 @@ const Profile = () => {
           </div>
           <div>
             <p className="mb-5 text-base-content font-bold text-justify leading-8">
-              I am a MERN stack developer with a proven track record of
-              designing and implementing innovative user-centric websites. I
-              have been working in the field for the past four years developing
-              complex applications in Web Development.
+              I am a Fullstack engineer with a proven track record of designing
+              and implementing innovative user-centric websites. I have been
+              working in the field for the past four years developing complex
+              applications in Web Development.
             </p>
           </div>
           <div style={{ fontFamily: "IBM Plex Mono,monospace" }}>

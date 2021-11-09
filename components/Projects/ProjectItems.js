@@ -60,7 +60,7 @@ const ProjectItems = (props) => {
       style={{ fontFamily: "poppins" }}
       className="mx-auto text-base-200-content flex flex-col text-base-content font-medium text-xl transition duration-100 ease-linear "
     >
-      <dl className="space-y-10 md:space-y-0 lg:grid lg:grid-cols-1 md:gap-x-8 md:gap-y-10 xl:mx-20 ">
+      <div className="space-y-10 md:space-y-0 lg:grid lg:grid-cols-1 md:gap-x-8 md:gap-y-10 xl:mx-20 ">
         {Projects.slice(props.start, props.end).map((feature) => (
           <div
             key={feature.name}
@@ -120,7 +120,7 @@ const ProjectItems = (props) => {
             </div>
           </div>
         ))}
-      </dl>
+      </div>
     </div>
   );
 };

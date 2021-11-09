@@ -5,6 +5,8 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta name="theme-color" content="#FFFFFF" />
+
           <meta name="application-name" content="Ahmed Hassan's Websiite" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
@@ -21,13 +23,19 @@ class MyDocument extends Document {
           />
           <meta name="format-detection" content="telephone=no" />
           <meta name="mobile-web-app-capable" content="yes" />
+          <link
+            rel="apple-touch-icon"
+            sizes="192x192"
+            href="icon-192x192.png"
+          />
+
           {/* TIP: set viewport head meta tag in _app.js, otherwise it will show a warning */}
 
-          <link
+          {/* <link
             rel="apple-touch-icon"
             sizes="180x180"
             href="/icons/apple-touch-icon.png"
-          />
+          /> */}
           <link rel="manifest" href="/manifest.json" />
           <link rel="shortcut icon" href="/favicon.ico" />
 

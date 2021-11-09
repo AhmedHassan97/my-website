@@ -29,7 +29,7 @@ const Careers = {
       company: "Refolded",
       role: "Full Stack Engineer",
       date: "July 2021 -Current",
-      link: "",
+      link: "https://github.com/refolded",
       image:
         "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
       whatIDid: [
@@ -89,11 +89,11 @@ const Experiences = () => {
         <div className="divider w-1/2 lg:mx-auto mr-auto"></div>
 
         {/* container */}
-        <div className="flex flex-col mt-10 space-y-4 lg:ml-20">
+        <div className="flex flex-col mt-10 space-y-4 xl:mx-20">
           {/* single Card */}
           <div className="space-y-10 ">
             <h1
-              className="font-extrabold text-4xl "
+              className="font-extrabold text-4xl"
               style={{ fontFamily: "IBM Plex Mono,monospace" }}
             >
               Work Experience

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ProjectItems from "./ProjectItems";
 
@@ -39,11 +38,11 @@ const Projects = () => {
                 fontWeight: "600",
               }}
             >
-              <Link href="/Projects" aria-label="Projects Page">
-                <a aria-label="Projects Page">
-                  See More <ArrowForwardIcon />
-                </a>
-              </Link>
+              {/* <Link href="/Projects" aria-label="Projects Page"> */}
+              <a href="/Projects">
+                See More Projects <ArrowForwardIcon />
+              </a>
+              {/* </Link> */}
             </button>
           </div>
         </div>
