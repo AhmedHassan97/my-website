@@ -26,6 +26,10 @@ function MyApp({ Component, pageProps }) {
         ></meta>
         <meta property="og:site_name" content="Ahmed Hassan's Website"></meta>
         <meta property="og:image" content="/site.PNG"></meta>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
+        />
       </Head>
       <Component {...pageProps} />
     </ThemeProvider>
