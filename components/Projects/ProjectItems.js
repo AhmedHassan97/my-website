@@ -66,11 +66,11 @@ const ProjectItems = (props) => {
             key={feature.name}
             className="space-y-4 w-full border-r-2 border-l-8 border-b-8 border-t-2 border-base-content p-8 rounded-box"
           >
-            <div className="sm:flex-row flex-col flex">
+            <div className="sm:flex-row flex-col flex space-y-2 sm:space-y-0">
               <div className="h-12 w-12 rounded-md">
                 <feature.icon />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col space-y-2">
                 <p
                   className="ml-2 text-3xl leading-6 font-extrabold my-auto"
                   style={{ fontFamily: "IBM Plex Mono,monospace" }}

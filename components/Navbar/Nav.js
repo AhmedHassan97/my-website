@@ -29,11 +29,11 @@ const Navbar = () => {
       {({ open }) => (
         <>
           <div
-            className=" px-2 lg:px-8 mx-auto font-semibold text-xl my-2"
-            style={{ maxWidth: "1600px" }}
+            className=" px-2 font-semibold text-xl my-2 lg:mx-20"
+            // style={{ maxWidth: "1600px" }}
           >
             <div
-              className="relative flex items-center justify-between h-16"
+              className="relative flex items-center justify-between h-16 "
               style={{ fontFamily: "IBM Plex Mono,monospace" }}
             >
               <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">

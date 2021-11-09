@@ -68,7 +68,7 @@ const Experiences = () => {
   return (
     <div
       className="mx-auto mt-11 pt-20 text-base-200-content flex flex-col text-base-content font-medium text-xl bg-base-100 transition duration-100 ease-linear md:min-h-screen"
-      style={{ maxWidth: "1600px", fontFamily: "poppins" }}
+      style={{ fontFamily: "poppins" }}
       id="experience"
     >
       <div className="px-4 sm:px-6 lg:px-8 flex flex-col">

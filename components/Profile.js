@@ -28,8 +28,8 @@ const Profile = () => {
       leaveTo="opacity-0 scale-95"
     >
       <div
-        className="xl:min-h-screen mt-11 pt-20 px-2 lg:px-8 flex xl:flex-row flex-col justify-between mx-auto md:space-x-2 space-x-0 md:pb-0 pb-8 text-base-content font-medium text-xl bg-base-100 transition duration-100 ease-linear "
-        style={{ maxWidth: "1600px", fontFamily: "poppins" }}
+        className="xl:min-h-screen mt-11 pt-20 px-2 lg:mx-20 flex xl:flex-row flex-col justify-between md:space-x-2 space-x-0 md:pb-0 pb-8 text-base-content font-medium text-xl bg-base-100 transition duration-100 ease-linear "
+        style={{ fontFamily: "poppins" }}
         id="profile"
       >
         <div className="flex flex-col max-w-4xl">
@@ -44,7 +44,7 @@ const Profile = () => {
           </div>
           {/* Body */}
           <div>
-            <p className="pb-3">//ABOUT</p>
+            <p className="pb-3">\//ABOUT</p>
           </div>
           <div>
             <p className="mb-5 text-base-content font-bold text-justify leading-8">
@@ -73,14 +73,14 @@ const Profile = () => {
         </div>
 
         <div className="bg-primary text-primary-content font-extrabold rounded-box max-w-md max-h-80 ">
-          <div className="card-body flex flex-col ">
+          <div className="card-body flex flex-col px-0 pl-1 xl:px-8">
             <h2
               className="text-3xl font-extrabold pb-4"
               style={{ fontFamily: "IBM Plex Mono,monospace" }}
             >
               Contact me:
             </h2>
-            <div className="flex flex-col justify-start space-y-2 sm:text-xl text-base">
+            <div className="flex flex-col justify-start space-y-2 sm:text-xl text-sm">
               {/* <FacebookIcon fontSize="large" /> */}
               <div className="flex flex-row justify-start text-center items-center space-x-2">
                 <LinkedInIcon fontSize="large" />

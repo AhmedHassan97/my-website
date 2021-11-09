@@ -1,11 +1,11 @@
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ProjectItems from "./ProjectItems";
-
+import Link from "next/link";
 const Projects = () => {
   return (
     <div
       className="mx-auto mt-11 pt-20 text-base-200-content flex flex-col pb-8 text-base-content font-medium text-xl bg-base-200 transition duration-100 ease-linear md:min-h-screen"
-      style={{ maxWidth: "1600px", fontFamily: "poppins" }}
+      style={{ fontFamily: "poppins" }}
       id="projects"
     >
       <div className="px-4 sm:px-6 lg:px-8 flex flex-col">
@@ -29,21 +29,21 @@ const Projects = () => {
           <ProjectItems start={0} end={2} />
 
           <div className="flex flex-row ml-auto">
-            <button
-              className="font-extrabold text-xl hover:bg-primary hover:text-primary-content rounded-box xl:mx-20 mt-8 "
-              style={{
-                boxShadow: "-3px 5px #33332d",
-                padding: "0.6rem 1rem",
-                border: "3px solid",
-                fontWeight: "600",
-              }}
-            >
-              {/* <Link href="/Projects" aria-label="Projects Page"> */}
-              <a href="/Projects">
-                See More Projects <ArrowForwardIcon />
+            <Link href="/Projects" aria-label="Projects Page">
+              <a>
+                <button
+                  className="font-extrabold text-xl hover:bg-primary hover:text-primary-content rounded-box xl:mx-20 mt-8 "
+                  style={{
+                    boxShadow: "-3px 5px #33332d",
+                    padding: "0.6rem 1rem",
+                    border: "3px solid",
+                    fontWeight: "600",
+                  }}
+                >
+                  See More Projects <ArrowForwardIcon />
+                </button>
               </a>
-              {/* </Link> */}
-            </button>
+            </Link>
           </div>
         </div>
       </div>

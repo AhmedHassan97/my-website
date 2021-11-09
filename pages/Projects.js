@@ -3,7 +3,7 @@ import ProjectItems from "../components/Projects/ProjectItems";
 
 const ProjectsPage = () => {
   return (
-    <div style={{ maxWidth: "1600px", fontFamily: "poppins" }}>
+    <div style={{ fontFamily: "poppins" }} className="mx-auto w-screen">
       <Navbar />
       <div
         className="hero min-h-screen bg-fixed"
