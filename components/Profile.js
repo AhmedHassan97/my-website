@@ -7,8 +7,15 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MailIcon from "@mui/icons-material/Mail";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
+import { saveAs } from "file-saver";
 
 const Profile = () => {
+  const saveFile = () => {
+    saveAs(
+      "https://drive.google.com/uc?id=1f0VI_JB6Pi4psCDZzFRyOKb1L_BCwSd-&export=download",
+      "Resume.pdf"
+    );
+  };
   return (
     <Transition
       as={Fragment}
@@ -56,10 +63,9 @@ const Profile = () => {
                 border: "3px solid",
                 fontWeight: "600",
               }}
+              onClick={() => saveFile()}
             >
-              <a href="./Resume.pdf" download>
-                Download Resume
-              </a>
+              Download Resume
             </button>
           </div>
 

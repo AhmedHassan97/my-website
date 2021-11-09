@@ -2,7 +2,7 @@ import Link from "next/link";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ProjectItems from "./ProjectItems";
 
-const Projects = (props) => {
+const Projects = () => {
   return (
     <div
       className="mx-auto mt-11 pt-20 text-base-200-content flex flex-col pb-8 text-base-content font-medium text-xl bg-base-200 transition duration-100 ease-linear md:min-h-screen"

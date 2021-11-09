@@ -27,7 +27,7 @@ const Careers = {
   items: [
     {
       company: "Refolded",
-      role: "Full Stack Engineer (MERN)",
+      role: "Full Stack Engineer",
       date: "July 2021 -Current",
       link: "",
       image:

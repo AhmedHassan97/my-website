@@ -21,7 +21,7 @@ const ProjectsPage = () => {
               Projects
             </h1>
 
-            <p className="mb-5 text-xl font-extrabold w-full">
+            <p className="mb-5 text-2xl font-extrabold w-full">
               Every project is an opportunity to learn, to figure out problems
               and challenges, to invent and reinvent.
             </p>

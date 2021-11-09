@@ -73,8 +73,8 @@ const Navbar = (props) => {
                       className=" font-extrabold text-2xl text-primary-content px-2"
                       style={{ fontFamily: "Orbitron" }}
                     >
-                      <Link href="/">
-                        <a>H</a>
+                      <Link href="/" aria-label="profile">
+                        <a aria-label="profile">H</a>
                       </Link>
                     </h1>
                   </div>
