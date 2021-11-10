@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
         <title>Ahmed Hassan's Website</title>
         <meta
           name="description"
-          content="Hi, my name is Ahmed Hassan. I am a MERN stack developer with a proven track record of
+          content="Hi, my name is Ahmed Hassan. I am a Full stack developer with a proven track record of
           designing and implementing innovative user-centric websites."
         ></meta>
         <meta property="og:type" content="website"></meta>
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         <meta
           name="og:description"
           property="og:description"
-          content="Hi, my name is Ahmed Hassan. I am a MERN stack developer with a proven track record of
+          content="Hi, my name is Ahmed Hassan. I am a Full stack developer with a proven track record of
           designing and implementing innovative user-centric websites."
         ></meta>
         <meta property="og:site_name" content="Ahmed Hassan's Website"></meta>
