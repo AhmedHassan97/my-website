@@ -72,7 +72,7 @@ const ProjectItems = (props) => {
               </div>
               <div className="flex flex-col space-y-2">
                 <p
-                  className="ml-2 text-3xl leading-6 font-extrabold my-auto"
+                  className="ml-2 text-3xl font-extrabold my-auto	leading-7"
                   style={{ fontFamily: "IBM Plex Mono,monospace" }}
                 >
                   {feature.name}

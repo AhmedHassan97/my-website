@@ -17,9 +17,7 @@ const Navbar = () => {
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
   ]);
-  useEffect(() => {
-    console.log(router.pathname);
-  });
+
   return (
     <Disclosure
       as="nav"
@@ -28,10 +26,7 @@ const Navbar = () => {
     >
       {({ open }) => (
         <>
-          <div
-            className=" px-2 font-semibold text-xl my-2 lg:mx-20"
-            // style={{ maxWidth: "1600px" }}
-          >
+          <div className=" px-2 font-semibold text-xl lg:mx-20">
             <div
               className="relative flex items-center justify-between h-16 "
               style={{ fontFamily: "IBM Plex Mono,monospace" }}
@@ -53,20 +48,20 @@ const Navbar = () => {
               </div>
               <div className="flex-1 flex items-center justify-center lg:items-stretch lg:justify-start">
                 {router.pathname === "/" ? (
-                  <div className="flex-shrink-0 flex xl:mr-auto rounded-box bg-primary">
+                  <div className="flex-shrink-0 flex xl:mr-auto rounded-full bg-primary py-1 px-3">
                     <h1
-                      className=" font-extrabold text-2xl text-primary-content px-2"
+                      className=" font-extrabold text-3xl text-primary-content"
                       style={{ fontFamily: "Orbitron" }}
                     >
-                      <Link href="/">
-                        <a>H</a>
+                      <Link href="/" aria-label="profile">
+                        <a aria-label="profile">H</a>
                       </Link>
                     </h1>
                   </div>
                 ) : (
-                  <div className="flex-shrink-0 flex xl:mr-auto rounded-box bg-primary">
+                  <div className="flex-shrink-0 flex xl:mr-auto rounded-full bg-primary py-1 px-3">
                     <h1
-                      className=" font-extrabold text-2xl text-primary-content px-2"
+                      className=" font-extrabold text-3xl text-primary-content"
                       style={{ fontFamily: "Orbitron" }}
                     >
                       <Link href="/" aria-label="profile">

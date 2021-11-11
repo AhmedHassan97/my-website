@@ -1,17 +1,17 @@
 import Navbar from "../components/Navbar/Nav";
-import SkillsComponent from "../components/Skills";
-import Profile from "../components/Profile";
-import Projects from "../components/Projects/Projects";
-import Experiences from "../components/Experience";
+import SkillsComponent from "../components/Skills/SkillsSection";
+import Profile from "../components/Profile/ProfileSection";
+import ProjectsSection from "../components/Projects/ProjectsSection";
+import Experiences from "../components/Experience/ExperienceSection";
 export default function Home() {
   return (
     <div>
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <Profile />
         <SkillsComponent />
         <Experiences />
-        <Projects start={0} end={2} />
+        <ProjectsSection start={0} end={2} />
       </div>
     </div>
   );

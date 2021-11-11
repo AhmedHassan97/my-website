@@ -30,13 +30,11 @@ class MyDocument extends Document {
             href="icon-192x192.png"
           />
 
-          {/* TIP: set viewport head meta tag in _app.js, otherwise it will show a warning */}
-
-          {/* <link
+          <link
             rel="apple-touch-icon"
-            sizes="180x180"
-            href="/icons/apple-touch-icon.png"
-          /> */}
+            sizes="192x192"
+            href="/icon-192x192.png"
+          />
           <link rel="manifest" href="/manifest.json" />
           <link rel="shortcut icon" href="/favicon.ico" />
 

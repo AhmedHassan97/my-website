@@ -1,10 +1,19 @@
-import Navbar from "../components/Navbar/Nav";
-import ProjectItems from "../components/Projects/ProjectItems";
+import ProjectItems from "../../components/Projects/ProjectItems";
+import useTypingEffect from "use-typing-effect";
 
 const ProjectsPage = () => {
+  const heading = useTypingEffect(
+    [
+      "Every project is an opportunity to learn, to figure out problems and challenges, to invent and reinvent.",
+    ],
+    {
+      loop: false,
+      playbackRate: 0.75,
+    }
+  );
+
   return (
-    <div style={{ fontFamily: "poppins" }} className="mx-auto w-screen">
-      <Navbar />
+    <div className="mx-auto w-screen">
       <div
         className="hero min-h-screen bg-fixed"
         style={{
@@ -13,18 +22,14 @@ const ProjectsPage = () => {
       >
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="text-center hero-content text-neutral-content">
-          <div className="max-w-md">
+          <div className="max-w-2xl">
             <h1
               className="mb-5 xl:text-8xl text-6xl font-bold"
               style={{ fontFamily: "IBM Plex Mono,monospace" }}
             >
               Projects
             </h1>
-
-            <p className="mb-5 text-2xl font-extrabold w-full">
-              Every project is an opportunity to learn, to figure out problems
-              and challenges, to invent and reinvent.
-            </p>
+            <p className="mb-5 text-2xl  font-bold w-full italic">{heading}</p>
           </div>
         </div>
       </div>

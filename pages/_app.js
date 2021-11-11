@@ -2,11 +2,12 @@ import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
 import { ThemeProvider } from "next-themes";
 import Head from "next/head";
+import Navbar from "../components/Navbar/Nav";
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider defaultTheme="luxury" attribute="data-theme">
-      <Head>
-        <title>Ahmed Hassan's Website</title>
+      <Head lang="en">
+        <title>Ahmed Hassan&apos;s Website</title>
         <meta
           name="description"
           content="Hi, my name is Ahmed Hassan. I am a MERN stack developer with a proven track record of
@@ -31,6 +32,7 @@ function MyApp({ Component, pageProps }) {
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
         />
       </Head>
+      <Navbar />
       <Component {...pageProps} />
     </ThemeProvider>
   );
