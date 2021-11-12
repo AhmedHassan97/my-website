@@ -21,7 +21,7 @@ const Projects = () => {
           <Link href="/projects" aria-label="Projects Page">
             <a>
               <button
-                className="font-extrabold text-xl hover:bg-primary hover:text-primary-content rounded-box xl:mx-20 mt-8 "
+                className="font-extrabold text-xl hover:bg-primary hover:text-primary-content rounded-box xl:mx-20 mt-8"
                 style={{
                   boxShadow: "-3px 5px #33332d",
                   padding: "0.6rem 1rem",
