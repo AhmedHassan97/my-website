@@ -1,6 +1,6 @@
 import ProjectItems from "../../components/Projects/ProjectItems";
 import useTypingEffect from "use-typing-effect";
-
+import Navbar from "../../components/Navbar/Nav";
 const ProjectsPage = () => {
   const heading = useTypingEffect(
     [
@@ -14,6 +14,8 @@ const ProjectsPage = () => {
 
   return (
     <div className="mx-auto w-screen">
+      <Navbar />
+
       <div
         className="hero min-h-screen bg-fixed"
         style={{

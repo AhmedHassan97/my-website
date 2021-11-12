@@ -7,7 +7,14 @@ export default function Home() {
   return (
     <div>
       <div>
-        {/* <Navbar /> */}
+        <Navbar
+          navigation={[
+            { name: "Profile", href: "#profile" },
+            { name: "Skills", href: "#skills" },
+            { name: "Experience", href: "#experience" },
+            { name: "Projects", href: "#projects" },
+          ]}
+        />
         <Profile />
         <SkillsComponent />
         <Experiences />
