@@ -4,19 +4,10 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import Scrollspy from "react-scrollspy";
-import { useRouter } from "next/router";
 const themes = ["halloween", "light", "luxury", "corporate", "forest"];
 
-const Navbar = () => {
+const Navbar = (props) => {
   const { theme, setTheme } = useTheme();
-  const router = useRouter();
-
-  const [activeNavigation, setActiveNavigation] = useState([
-    { name: "Profile", href: "#profile" },
-    { name: "Skills", href: "#skills" },
-    { name: "Experience", href: "#experience" },
-    { name: "Projects", href: "#projects" },
-  ]);
 
   return (
     <Disclosure
@@ -33,7 +24,7 @@ const Navbar = () => {
             >
               <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
                 {/* Mobile menu button*/}
-                {router.pathname === "/" ? (
+                {props.navigation ? (
                   <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:bg-base-300">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
@@ -43,41 +34,29 @@ const Navbar = () => {
                     )}
                   </Disclosure.Button>
                 ) : (
-                  <div></div>
+                  <></>
                 )}
               </div>
               <div className="flex-1 flex items-center justify-center lg:items-stretch lg:justify-start">
-                {router.pathname === "/" ? (
-                  <div className="flex-shrink-0 flex xl:mr-auto rounded-full bg-primary py-1 px-3">
-                    <h1
-                      className=" font-extrabold text-3xl text-primary-content"
-                      style={{ fontFamily: "Orbitron" }}
-                    >
-                      <Link href="/" aria-label="profile">
-                        <a aria-label="profile">H</a>
-                      </Link>
-                    </h1>
-                  </div>
-                ) : (
-                  <div className="flex-shrink-0 flex xl:mr-auto rounded-full bg-primary py-1 px-3">
-                    <h1
-                      className=" font-extrabold text-3xl text-primary-content"
-                      style={{ fontFamily: "Orbitron" }}
-                    >
-                      <Link href="/" aria-label="profile">
-                        <a aria-label="profile">H</a>
-                      </Link>
-                    </h1>
-                  </div>
-                )}
-                {router.pathname === "/" ? (
+                <div className="flex-shrink-0 flex xl:mr-auto rounded-full bg-primary py-1 px-3">
+                  <h1
+                    className=" font-extrabold text-3xl text-primary-content"
+                    style={{ fontFamily: "Orbitron" }}
+                  >
+                    <Link href="/" aria-label="profile">
+                      <a aria-label="profile">H</a>
+                    </Link>
+                  </h1>
+                </div>
+
+                {props.navigation ? (
                   <div className="hidden lg:block  ml-auto lg:ml-auto">
                     <div className="flex space-x-4">
                       <Scrollspy
                         items={["profile", "skills", "experience", "projects"]}
                         currentClassName="border-b-2 border-primary text-primary"
                       >
-                        {activeNavigation?.map((item) => (
+                        {props.navigation?.map((item) => (
                           <a
                             href={item.href}
                             key={item.name}
@@ -167,10 +146,10 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          {router.pathname === "/" ? (
+          {props.navigation ? (
             <Disclosure.Panel className=" lg:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 flex flex-col">
-                {activeNavigation?.map((item) => (
+                {props.navigation?.map((item) => (
                   <Disclosure.Button
                     key={item.name}
                     as="a"
