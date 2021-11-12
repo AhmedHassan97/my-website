@@ -38,16 +38,9 @@ const Profile = () => {
         <About />
         {/* Contact */}
         <motion.div
-          animate={{
-            scale: [1, 2, 2, 1, 1],
-            rotate: [360, 0],
-          }}
-          transition={{
-            duration: 2,
-            ease: "easeInOut",
-            times: [0, 0.2, 0.5, 0.8, 1],
-            repeatDelay: 1,
-          }}
+          initial={{ x: "100vw" }}
+          animate={{ x: 0 }}
+          transition={{ type: "spring", delay: 0.5, stiffness: 80 }}
         >
           <ContactCard />
         </motion.div>
