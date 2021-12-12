@@ -1,7 +1,8 @@
-import ProjectItems from "../../components/Projects/ProjectItems";
+import ProjectItems from "../../app/components/Projects/ProjectItems";
 import useTypingEffect from "use-typing-effect";
-import Navbar from "../../components/Navbar/Nav";
-const ProjectsPage = () => {
+import Navbar from "../../app/components/Navbar/Nav";
+import { connectToDatabase } from "../../util/mongodb";
+const ProjectsPage = (props) => {
   const heading = useTypingEffect(
     [
       "Every project is an opportunity to learn, to figure out problems and challenges, to invent and reinvent.",
@@ -13,7 +14,7 @@ const ProjectsPage = () => {
   );
 
   return (
-    <div className="mx-auto w-screen">
+    <div className="mx-auto">
       <Navbar />
 
       <div
@@ -36,10 +37,27 @@ const ProjectsPage = () => {
         </div>
       </div>
       <div className="my-20 mx-4">
-        <ProjectItems start={0} end={-1} />
+        <ProjectItems
+          start={0}
+          end={props.projects.length}
+          projects={props.projects}
+        />
       </div>
     </div>
   );
 };
 
 export default ProjectsPage;
+
+export async function getStaticProps(context) {
+  const { db } = await connectToDatabase();
+  const projects = await db.collection("projects").find().toArray();
+
+  // const
+  return {
+    props: {
+      projects: JSON.parse(JSON.stringify(projects)),
+    }, // will be passed to the page component as props
+    revalidate: 1000, // In seconds
+  };
+}

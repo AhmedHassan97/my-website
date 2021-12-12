@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
 import { ThemeProvider } from "next-themes";
 import Head from "next/head";
-import Navbar from "../components/Navbar/Nav";
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider defaultTheme="luxury" attribute="data-theme">
