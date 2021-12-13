@@ -40,9 +40,6 @@ const About = () => {
       </div>
       {/* Body */}
       <div>
-        <p className="pb-3">\//ABOUT</p>
-      </div>
-      <div>
         <motion.p
           initial={{ y: "-100vh", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
