@@ -6,11 +6,10 @@ import { motion } from "framer-motion";
 const About = () => {
   const saveFile = () => {
     saveAs(
-      "https://drive.google.com/uc?id=1f0VI_JB6Pi4psCDZzFRyOKb1L_BCwSd-&export=download",
+      "https://drive.google.com/uc?export=download&id=1XvEGcnrcYzjGfO8KVnFoL3tLKW6buQsP",
       "Resume.pdf"
     );
   };
-  // const heading = useTypingEffect(["Hi,I am Ahmed Hassan"], {
   //   loop: false,
   //   playbackRate: 2,
   // });
