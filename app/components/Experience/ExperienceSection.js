@@ -3,6 +3,7 @@ import Header from "../Header&Layout/Header";
 import Layout from "../Header&Layout/Layout";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Linkify from "react-linkify";
 
 const Experiences = (props) => {
   const { ref, inView, entry } = useInView();
@@ -64,6 +65,15 @@ const Experiences = (props) => {
                           {item.company}
                         </a>
                       </h1>
+                      <h2
+                        className="text-lg text-base-content font-extrabold "
+                        style={{ fontFamily: "IBM Plex Mono,monospace" }}
+                      >
+                        {item.roleType}
+                      </h2>
+                      <h2 className="text-lg text-base-content font-extrabold ">
+                        {item.place}
+                      </h2>
                       <h2 className="text-base text-base-content font-bold ">
                         {item.date}
                       </h2>
@@ -82,7 +92,14 @@ const Experiences = (props) => {
                             className="font-semibold text-primary"
                             key={task.length}
                           >
-                            -{task}
+                            <Linkify
+                              properties={{
+                                target: "_blank",
+                                style: { color: "blue" },
+                              }}
+                            >
+                              -{task}
+                            </Linkify>
                           </div>
                         ))}
                       </div>
