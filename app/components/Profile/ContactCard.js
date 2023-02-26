@@ -18,7 +18,7 @@ const ContactCard = () => {
           {/* <FacebookIcon fontSize="large" /> */}
           <div className="flex flex-row justify-start text-center items-center space-x-2">
             <LinkedInIcon fontSize="large" />
-            <Link href="https://www.linkedin.com/in/ahmed-hassan-509893190/ ">
+            <Link href="https://www.linkedin.com/in/ahmedhassan1997/ ">
               <a className="link link-hover text-primary-content">
                 /ahmed-hassan
               </a>
